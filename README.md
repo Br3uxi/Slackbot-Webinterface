@@ -1,6 +1,6 @@
 #Herzlich Wilkommen zum Slackbot Webinterface
 
-Für dieses Webinterface benötigst du einen Webserver,solltest du keinen Privaten Webserver haben, würde ich dir Xamapp empfehlen (https://www.apachefriends.org/de/index.html)
+Für dieses Webinterface benötigst du einen Webserver,solltest du keinen Privaten Webserver haben, würde ich dir [Xamapp](https://www.apachefriends.org/de/index.html) empfehlen 
 
 Dieser Webserver ist notwendig weil dieses Webinterface in PHP verfasst wurde
 
