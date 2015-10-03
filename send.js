@@ -40,8 +40,20 @@ $(document).ready(function(){
                  type: "POST",
                  url: sburl,
                  data: message,
-                 success: document.write("<h2 style=\"color: green\">Deine Nachricht wurde gesendet</h2> <br> <br> <button onclick=\"window.location.href='index.html'\">Zur&uuml;ck</button>"),
-                 });
+                 success: function(xml, textStatus, xhr) {
+                     if(xml.match("ok")) {
+                         document.write("<p>Deine Nachricht wurde gesendet</p>  <br> <br> <button onclick=\"window.location.href='index.html'\">Zur&uuml;ck</button>");
+                         return false;
+                     }
+                 },
+                 statusCode: {
+                        500: function(xhr) {
+                            if(xhr.responseText.match("channel_not_found")){
+                                document.write("<p style='color: red'>Dieser Channel konnte nicht gefunden werden</p> <br> <br> <button onclick=\"window.location.href='index.html'\">Zur&uuml;ck</button>");
+                            }
+                        }
+                    }
+                });
             });
 
         return false;
