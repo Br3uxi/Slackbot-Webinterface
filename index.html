@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Slackbot Webinterface</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Breuxi">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="send.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <form id="form1">
+        <img src="images/slackbot_192.png" alt="Slackbot Icon">
+        <h1 id="firstText">Slackbot Webinterface</h1>
+        <table>
+            <tr>
+                <td><input type="text" id="channel" name="channel" placeholder="Name des Channels ein (ohne #)"></td>
+            </tr>
+            <tr>
+                <td> <textarea id="message" name="message" placeholder="Bitte gib deine Nachricht ein" cols="23"></textarea></td>
+            </tr>
+            <tr>
+                <td><button id="submit">Senden</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
