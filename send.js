@@ -14,11 +14,12 @@ $(document).ready(function(){
                 var teamdomain = $(data).find("Team-Domain").text();
                 var html = "";
                 
+                // URL überprüfen
                 if(url == ""){
                     var error = "";
                     url_succeed = false;
                     console.log("Keine URL angegeben");
-                    error += "<p class='error' id='error_text_1'>Achtung! Sie haben in der <a class='error_link' href='" + config_loc + "'>Config.xml</a> keine Slackbot URL angegeben, dadurch kann das Webinterface nichts senden</h1>";
+                    error += "<p class='error' id='error_text_1'>Achtung! Sie haben in der <a class='error_link' target='_blank' href='" + config_loc + "'>Config.xml</a> keine Slackbot URL angegeben, dadurch kann das Webinterface nichts senden</h1>";
                     
                     $("#error-container").html(error);
                 }else{
@@ -45,9 +46,10 @@ $(document).ready(function(){
                 var url = $(data).find("URL").text();
                 var teamdomain = $(data).find("Team-Domain").text();
 
+                // Überprüfen ob eine URL vorhanden ist
                 if(url_succeed == false){
                     document.write("<style type'text/css'>.error_link {color: blue; text-decoration: none;} .error_link:hover {text-decoration: underline;}</style>");
-                    document.write('<p style="color: red">Weil sie in der <a class="error_link" href="' + config_loc + '">Config.xml</a> keine Slackbot URL angegeben, kann das Webinterface nichts senden</p> <br> <br> <button onclick="window.location.href=\'index.html\'">Zur&uuml;ck</button>');
+                    document.write('<p style="color: red">Weil sie in der <a class="error_link" target="_blank" href="' + config_loc + '">Config.xml</a> keine Slackbot URL angegeben, kann das Webinterface nichts senden</p> <br> <br> <button onclick="window.location.href=\'index.html\'">Zur&uuml;ck</button>');
                     return false;
                 }
                 
