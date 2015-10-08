@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Slackbot>
-    <URL></URL>
+    <URL></URL> <!-- Gib hier deine Slackbot URL an -->
+    <Team-Domain></Team-Domain> <!-- Gib hier deine Slack Team Domain an, um das Slackbot-Icon als Shortcut zu deinem Slack Team benutzen zu können -->
 </Slackbot>
