@@ -86,7 +86,7 @@ $(document).ready(function(){
                  data: message,
                  success: function(xml, textStatus, xhr) {
                      if(xml.match("ok")) {
-                         document.write("<p style=\"color=\"green\">Deine Nachricht wurde gesendet</p>  <br> <br> <button onclick=\"window.location.href='index.html'\">Zur&uuml;ck</button>");
+                         document.write("<p style='color: green'>Deine Nachricht wurde gesendet</p>  <br> <br> <button onclick=\"window.location.href='index.html'\">Zur&uuml;ck</button>");
                          return false;
                      }
                  },
