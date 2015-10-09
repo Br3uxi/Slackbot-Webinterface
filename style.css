@@ -16,6 +16,16 @@
     font-size: 20px;
 }
 
+#submit
+{
+    width: 205px;
+}
+
+#reset
+{
+    width: 205px;
+}
+
 .error
 {
     color: red;
