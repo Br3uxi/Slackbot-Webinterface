@@ -1,11 +1,9 @@
-#Herzlich Wilkommen zum Slackbot Webinterface
+#Slackbot Webinterface
 
-Für dieses Webinterface benötigst du einen Webserver,solltest du keinen Privaten Webserver haben, würde ich dir [XAMPP](https://www.apachefriends.org/de/index.html) empfehlen 
+This Webinterface needs a Webserver like [XAMPP](https://www.apachefriends.org/de/index.html) for Windows or [Apache](https://httpd.apache.org/) with PHP for Linux 
 
-Dieser Webserver ist notwendig weil dieses Webinterface in PHP verfasst wurde
+Install
+=========
+To install the Webinterface you only have to clone this Repo into your Webserver
 
-Wenn du dir XAMPP installiert, oder einen anderen Webserver hast, musst du nurnoch diese Zip Archiv in den htdocs Ordner entpacken, deine Slackbot URL in der Config.xml in das URL Tag einfügen, und die Website per http://localhost/Slackbot-Webinterface aufrufen
-
-Viel Spaß
-
-Breuxi
+Then you only have to add you Slackbot-URL to the config.xml and open your Webinterface at http://localhost/Slackbot-Webinterface
